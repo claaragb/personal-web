@@ -1,5 +1,5 @@
 :root {
-  --paper: #F6F5F1;
+  --paper: #FFFFFF;
   --blue: #002FA7;
   --ink: #242424;
   --line: #E5E5E5;
@@ -74,7 +74,7 @@ p {
   position: relative;
   z-index: 10;
   padding: 1.25rem var(--gutter);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 0;
 }
 .header-inner {
   width: min(100%, var(--content));
@@ -409,7 +409,7 @@ main {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem var(--gutter);
-  border-top: 1px solid var(--line);
+  border-top: 0;
   color: var(--muted);
   font-size: .75rem;
 }
