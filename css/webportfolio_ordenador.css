@@ -1,0 +1,442 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --slider-top: 11.5%;
+    --slider-width: 33%;
+    --slider-height: 72%;
+    --slider-left-1: 13%;
+    --slider-left-2: 55%;
+}
+
+body {
+        font-family: CarteroRegular, CarteroBold, CarteroLight;
+        width: 800px;
+        margin: 0 auto;
+        background-color: #26338a;
+    }
+
+h1 {
+	font-weight: 600;
+	font-size: 35pt;
+	color: black;
+}
+
+h3,
+h2 {
+	color: #26338a;
+	font-weight: 600;
+	font-family: CarteroBold;
+	margin-top: 30px;
+}
+
+h3 {
+	font-size: 20pt;
+}
+
+p {
+	font-weight: 400;
+	font-size: 12pt;
+}
+
+h4 {
+	font-size: 10pt;
+}
+
+h5 {
+	margin-top: 15px;
+	font-size: 13pt;
+	font-weight: 600;
+	font-family: CarteroBold;
+}
+
+.links,
+.links2 {
+	height: 20px;
+}
+
+/*barra de nav*/
+.container-fluid {
+	height: 20px;
+	display: block;
+}
+
+.nav-link {
+	color: white;
+	font-size: 10pt;
+}
+
+.nav-name {
+        margin-top: 8px;
+        font-size: 9pt;
+        color: white;
+    
+    }
+
+.nav-text {
+        /* margin-top: 15px; */
+        color: white;
+        font-weight: 300;
+    
+    }
+
+.navbar {
+        width: 800px;
+        display: block;
+        position: sticky;
+        z-index: 10;
+        top: 0px;
+    
+    }
+
+.navbar-toggler {
+	scale: 55%;
+	margin-top: -8px;
+	margin-right: -15px;
+}
+
+.bg-primary {
+	--bs-bg-opacity: 1;
+	background-color: rgb(37 54 133) !important;
+}
+
+li.nav-item {
+	padding-left: 15px;
+}
+
+.dropdown-menu {
+	width: 200px;
+	background-color: black;
+	border-radius: 5px;
+}
+
+.dropdown-item {
+	font-size: 9pt;
+}
+
+/*fin barra nav*/
+
+/*cv*/
+.contenedorAboutMe {
+        padding: 20px;
+        width: 800px;
+        background-color: white;
+    
+    }
+
+.miLogo {
+	width: 100%;
+	padding: 50px;
+	margin: 0 auto;
+	margin: -90px 0px;
+}
+
+.intro {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: -20px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 13pt;
+}
+
+.aboutme {
+	font-size: 40pt;
+	margin: 0px 20px 20px 15px;
+}
+
+.linea {
+	width: 50%;
+	height: 4px;
+	background-color: #26338a;
+	float: right;
+	margin-top: 35px;
+}
+
+.cv {
+	overflow: hidden;
+}
+
+.bio {
+	width: 70%;
+	margin: 0 auto;
+	align-items: center;
+}
+
+.flor {
+	width: 32%;
+	float: right;
+	margin: -10px -65px -65px 0px;
+}
+
+.flor2 {
+	width: 0%;
+	float: right;
+	margin: 80px -20px -80px 0px;
+	rotate: 80deg;
+}
+
+.flor3 {
+	width: 0%;
+	float: left;
+	margin: 80px -20px -80px 0px;
+	rotate: -40deg;
+}
+
+.flor,
+.flor2,
+.flor3 {
+	position: float;
+	margin-top: 10px;
+	animation: rotate 8s infinite ease;
+}
+
+@keyframes rotate {
+	0% {
+		rotate: 0deg
+	}
+
+	50% {
+		rotate: 360deg
+	}
+
+	100% {
+		rotate: 0deg
+	}
+}
+
+.retrato {
+	width: 100%;
+	margin-top: -40px;
+	border: solid 1px #26338a;
+}
+
+.educacion {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.azul {
+	color: #26338a;
+	font-weight: 600;
+	margin-top: 15px;
+}
+
+.meritos {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+
+.softwares {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 40px;
+}
+.softwaresImg{
+	width: 80%;
+	margin-top: 10px;
+}
+
+/*fin cv*/
+
+/*proyectos*/
+.contenedorProyectos {
+        padding: 20px;
+        width: 800px;
+        background-color: white; 
+    }
+
+.proyectos {
+	font-size: 40pt;
+	margin: 0px 20px 0px 15px;
+}
+
+.linea2 {
+	width: 50%;
+	height: 4px;
+	background-color: #26338a;
+	float: right;
+	margin-top: 35px;
+}
+
+.negro {
+	color: black;
+}
+
+.divProyectos {
+	padding: 0px 15px;
+}
+
+.imgProyectos,
+.imgProyectos1,
+.imgProyectos2,
+.imgProyectos3,
+.imgProyectos4,
+.imgProyectos5,
+.imgFade,
+.imgProyectos6,
+.imgProyectos6_2 {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.imgProyectos2 {
+	width: 100%;
+}
+
+.circles {
+	margin: 25px 0px 30px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 5px;
+}
+
+.circleOrange,
+.circleBlue,
+.circleDarkblue {
+	width: 70px;
+	height: 70px;
+	border-radius: 50px;
+}
+
+.circleOrange {
+	background-color: #ee574c;
+}
+
+.circleDarkblue {
+	background-color: #1f2948;
+}
+
+.circleBlue {
+	background-color: #35a1ca;
+}
+
+.contenedorMovil {
+	position: relative;
+	width: 100%;
+	margin: 0px 0px 70px 0px;
+	display: block;
+}
+
+.movil {
+	width: 100%;
+	margin-right: 10px;
+	display: block;
+}
+
+.slider,
+.slider2 {
+	position: absolute;
+	z-index: 2;
+	overflow-x: scroll;
+	scroll-snap-type: x mandatory;
+	border-radius: 32px;
+	/* Estimaciones de posicionamiento responsivo usando variables */
+	top: var(--slider-top);
+	width: var(--slider-width);
+	height: var(--slider-height);
+}
+
+.slider {
+	left: var(--slider-left-1);
+}
+
+.slider2 {
+	left: var(--slider-left-2);
+}
+
+.proyecto3 {
+        margin-bottom: 530px;
+    
+    }
+.proyecto3Grid{
+	margin-top: 30px;
+}
+.imgProyectos3{
+        position: absolute;
+        width: 730px;
+    
+    }
+.imgFade {
+        width: 730px;
+        position: absolute;
+        z-index: 1;
+        animation: fade 10s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
+    
+    }
+
+@keyframes fade {
+	0% {
+		opacity: 1
+	}
+
+	15% {
+		opacity: 0
+	}
+
+	30% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1
+	}
+}
+
+.enlace {
+	font-family: CarteroBold;
+	color: black;
+}
+
+/*fin proyectos*/
+
+/*contacto*/
+.contenedorContacto {
+        padding: 10px;
+        width: 800px;
+        background-color: #26338a;
+    
+    }
+
+.contactme {
+	height: 80px;
+}
+
+.blanco {
+	color: white;
+	font-size: 30pt;
+	margin: 0px 20px 0px 15px;
+}
+
+.datosContacto {
+	width: 90%;
+	display: grid;
+	grid-template-columns: 10% 90%;
+	gap: 10px;
+	margin-left: 5px;
+	margin-bottom: 20px;
+}
+
+.iconos {
+	margin-left: auto;
+}
+
+.icon {
+	width: 18px;
+	display: block;
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+
+.data {
+	color: white;
+	text-decoration: none;
+}
+
+/*fin contacto*/
