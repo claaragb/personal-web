@@ -1,14 +1,6 @@
 /*listado de tipografías*/
 
 @font-face {
-  font-family: "SpaceMono-Regular";
-  src: url("../fonts/SpaceMono-Regular.ttf");
-}
-@font-face {
-  font-family: "SpaceMono-Bold";
-  src: url("../fonts/SpaceMono-Bold.ttf");
-}
-@font-face {
   font-family: "WorkSans-Regular";
   src: url("../fonts/WorkSans-Regular.ttf");
 }
