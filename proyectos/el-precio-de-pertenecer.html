@@ -15,8 +15,11 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: clamp(1rem, 3vw, 2rem);
-        width: min(100%, 1200px);
+        width: min(calc(100vw - 2 * var(--gutter)), 2000px);
         margin: 0 auto;
+      }
+      .result-block {
+        border-top: 0;
       }
       .synced-gif-gallery img {
         display: block;
@@ -27,7 +30,7 @@
       @media (max-width: 600px) {
         .synced-gif-gallery {
           grid-template-columns: 1fr;
-          width: min(100%, 560px);
+          width: min(calc(100vw - 2 * var(--gutter)), 2000px);
         }
       }
     </style>
@@ -110,7 +113,7 @@
         </div>
       </div>
       <section class="case-copy">
-        <div class="content-block">
+        <div class="content-block result-block">
           <h3>
             <span data-es>Resultado</span><span data-en hidden>Outcome</span>
           </h3>
