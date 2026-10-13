@@ -146,6 +146,10 @@ main {
   margin-bottom: 1.5rem;
 }
 .hero-copy,
+.lead {
+  max-width: 52rem;
+  font-size: clamp(1.1rem, 2.2vw, 1.65rem);
+}
 .hero-bottom {
   display: flex;
   align-items: end;
