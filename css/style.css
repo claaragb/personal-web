@@ -22,7 +22,7 @@ body {
   color: var(--ink);
   font-family: "WorkSans-Regular", "Work Sans", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.55;
+  line-height: 1.4;
   -webkit-font-smoothing: antialiased;
 }
 img, svg, video {
@@ -50,11 +50,11 @@ h1, h2, h3, h4, p {
 h1, h2, h3 {
   font-family: "CarteroBold", "Work Sans", sans-serif;
   font-weight: 400;
-  line-height: 1.05;
+  line-height: 1;
 }
 h1 {
-  font-size: clamp(3rem, 7.8vw, 7.8rem);
-  letter-spacing: -.055em;
+  font-size: clamp(3rem, 7.8vw, 7.4rem);
+  letter-spacing: 0em;
 }
 h2 {
   font-size: clamp(2.2rem, 5vw, 5rem);
@@ -86,7 +86,7 @@ p {
 }
 .brand {
   font-family: "CarteroRegular", monospace;
-  font-size: .92rem;
+  font-size: .80rem;
   text-decoration: none;
   letter-spacing: -.03em;
 }
@@ -102,7 +102,7 @@ p {
   gap: clamp(.75rem, 2vw, 1.8rem);
 }
 .site-nav a, .language-switch button {
-  font-size: .9rem;
+  font-size: .85rem;
   text-decoration: none;
 }
 .site-nav a[aria-current="page"] {
@@ -134,11 +134,11 @@ main {
   padding-block: clamp(4rem, 10vw, 10rem) clamp(3rem, 7vw, 7rem);
 }
 .eyebrow {
-  margin-bottom: 1.1rem;
+  margin-bottom: 3.5rem;
   color: var(--blue);
   font-family: "CarteroRegular", monospace;
-  font-size: .88rem;
-  letter-spacing: .06em;
+  font-size: 1rem;
+  letter-spacing: .04em;
   text-transform: uppercase;
 }
 .hero h1 {
@@ -146,7 +146,7 @@ main {
   margin-bottom: 1.5rem;
 }
 .hero-copy {
-  max-width: 48rem;
+  max-width: 43rem;
   font-size: clamp(1.05rem, 1.8vw, 1.5rem);
 }
 .hero-bottom {
@@ -154,7 +154,7 @@ main {
   align-items: end;
   justify-content: space-between;
   gap: 2rem;
-  margin-top: clamp(3rem, 7vw, 7rem);
+  margin-top: clamp(3rem, 8vw, 9rem);
 }
 .hero-note {
   max-width: 20rem;
@@ -166,7 +166,7 @@ main {
   align-items: center;
   gap: .65rem;
   color: var(--blue);
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: .25rem;
@@ -188,7 +188,7 @@ main {
 .section-heading p {
   margin-bottom: .3rem;
   color: var(--muted);
-  font-size: .9rem;
+  font-size: 1rem;
 }
 .project-grid {
   display: grid;
@@ -222,19 +222,19 @@ main {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.8rem;
   color: var(--muted);
   font-family: "CarteroRegular", monospace;
-  font-size: .82rem;
+  font-size: .85rem;
 }
 .project-card h3 {
-  margin: .5rem 0;
+  margin: .8rem 0;
   font-size: clamp(1.5rem, 3vw, 2.8rem);
 }
 .project-card p {
   margin-bottom: 0;
   color: var(--muted);
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .provisional-note {
   display: inline-block;
