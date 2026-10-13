@@ -242,7 +242,7 @@ main {
   font-size: .72rem;
 }
 .page-intro {
-  padding-block: clamp(4rem, 9vw, 9rem) clamp(3rem, 6vw, 6rem);
+  padding-block: clamp(4rem, 10vw, 10rem) clamp(3rem, 6vw, 6rem);
 }
 .page-intro h1 {
   max-width: 13ch;
@@ -278,7 +278,7 @@ main {
   border-bottom: 1px solid var(--line);
 }
 .case-hero {
-  padding-block: clamp(3rem, 8vw, 8rem) 3rem;
+  padding-block: clamp(4rem, 10vw, 10rem) 3rem;
 }
 .case-hero h1 {
   max-width: 14ch;
