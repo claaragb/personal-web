@@ -300,9 +300,9 @@ main {
 }
 .case-details {
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr) minmax(0, .65fr);
   align-items: start;
-  gap: clamp(1.5rem, 1vw, 4rem);
+  gap: clamp(1.5rem, 3vw, 3rem);
   padding-block: 2rem 1rem;
 }
 .case-details dt {
@@ -312,9 +312,11 @@ main {
   margin-bottom: .65rem;
 }
 .case-details dd {
+  max-width: 32ch;
   margin: 0;
   line-height: 1.45;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
 }
 .case-copy {
   max-width: 760px;
