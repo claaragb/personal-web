@@ -27,7 +27,9 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 p, dd, li {
-  text-align: left;
+  text-align: justify;
+  text-align-last: left;
+  text-justify: inter-word;
   hyphens: auto;
   overflow-wrap: break-word;
 }
