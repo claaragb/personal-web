@@ -104,7 +104,13 @@
     padding-block: 4.5rem 3rem;
   }
   .case-hero {
-    padding-block: 4.5rem 3rem;
+    padding-block: 3rem .75rem;
+  }
+  .case-hero .eyebrow {
+    margin-bottom: 1rem;
+  }
+  .case-hero h1 {
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
   .page-intro h1 {
     font-size: clamp(3rem, 14vw, 5rem);
