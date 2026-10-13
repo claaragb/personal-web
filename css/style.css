@@ -335,6 +335,12 @@ main {
   max-width: 760px;
   padding-block: clamp(1.5rem, 2vw, 2rem);
 }
+
+@media (min-width: 681px) {
+  .case-copy {
+    max-width: 620px;
+  }
+}
 .case-copy h2,
 .case-copy h3 {
   margin-bottom: .8rem;
