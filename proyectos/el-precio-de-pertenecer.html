@@ -11,9 +11,10 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <style>
-      .synced-gif-gallery {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
+      main.container .case-gallery-stack .synced-gif-gallery {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch;
         gap: clamp(1rem, 3vw, 2rem);
         width: 100%;
         max-width: 2000px;
@@ -24,12 +25,14 @@
       .result-block {
         border-top: 0;
       }
-      .synced-gif-gallery .hover-gif {
+      main.container .case-gallery-stack .synced-gif-gallery > .hover-gif {
         display: block;
+        flex: 0 0 auto;
         width: 100%;
         max-width: 100%;
         height: auto;
         min-width: 0;
+        align-self: stretch;
       }
     </style>
   </head>
