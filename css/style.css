@@ -186,7 +186,6 @@ main {
   margin-bottom: 0;
 }
 .section-heading p {
-  margin-bottom: .3rem;
   color: var(--muted);
   font-size: 1rem;
 }
