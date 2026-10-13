@@ -278,11 +278,17 @@ main {
   border-bottom: 1px solid var(--line);
 }
 .case-hero {
-  padding-block: clamp(4rem, 10vw, 10rem) 3rem;
+  padding-block: clamp(3rem, 6vw, 6rem) 1rem;
+}
+.case-hero .eyebrow {
+  margin-bottom: 1.5rem;
 }
 .case-hero h1 {
   max-width: none;
   width: 100%;
+  margin-bottom: 0;
+  text-align: left;
+  font-size: clamp(2.6rem, 5.2vw, 5.2rem);
 }
 .case-cover {
   width: 100%;
@@ -311,15 +317,22 @@ main {
 }
 .case-copy {
   max-width: 760px;
-  padding-block: var(--space);
+  padding-block: clamp(2.5rem, 5vw, 5rem);
+}
+.case-copy h2 {
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  letter-spacing: -.025em;
 }
 .case-gallery {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1rem, 2vw, 2rem);
+  width: 100%;
 }
 .case-gallery img {
   width: 100%;
+  max-height: none;
+  object-fit: cover;
   background: var(--line);
 }
 .cv-grid {
