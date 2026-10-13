@@ -53,7 +53,7 @@ h1, h2, h3 {
   line-height: 1.05;
 }
 h1 {
-  font-size: clamp(3rem, 8.8vw, 8.8rem);
+  font-size: clamp(3rem, 7.8vw, 7.8rem);
   letter-spacing: -.055em;
 }
 h2 {
@@ -85,8 +85,8 @@ p {
   gap: 1.5rem;
 }
 .brand {
-  font-family: "CarteroBold", monospace;
-  font-size: .82rem;
+  font-family: "CarteroRegular", monospace;
+  font-size: .92rem;
   text-decoration: none;
   letter-spacing: -.03em;
 }
@@ -102,7 +102,7 @@ p {
   gap: clamp(.75rem, 2vw, 1.8rem);
 }
 .site-nav a, .language-switch button {
-  font-size: .78rem;
+  font-size: .9rem;
   text-decoration: none;
 }
 .site-nav a[aria-current="page"] {
@@ -137,7 +137,7 @@ main {
   margin-bottom: 1.1rem;
   color: var(--blue);
   font-family: "CarteroRegular", monospace;
-  font-size: .75rem;
+  font-size: .88rem;
   letter-spacing: .06em;
   text-transform: uppercase;
 }
@@ -166,7 +166,7 @@ main {
   align-items: center;
   gap: .65rem;
   color: var(--blue);
-  font-size: .9rem;
+  font-size: 1.05rem;
   text-decoration: none;
   border-bottom: 1px solid currentColor;
   padding-bottom: .25rem;
@@ -225,7 +225,7 @@ main {
   margin-top: 1rem;
   color: var(--muted);
   font-family: "CarteroRegular", monospace;
-  font-size: .7rem;
+  font-size: .82rem;
 }
 .project-card h3 {
   margin: .5rem 0;
@@ -234,7 +234,7 @@ main {
 .project-card p {
   margin-bottom: 0;
   color: var(--muted);
-  font-size: .9rem;
+  font-size: 1rem;
 }
 .provisional-note {
   display: inline-block;
