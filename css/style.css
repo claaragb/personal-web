@@ -281,7 +281,8 @@ main {
   padding-block: clamp(4rem, 10vw, 10rem) 3rem;
 }
 .case-hero h1 {
-  max-width: 14ch;
+  max-width: none;
+  width: 100%;
 }
 .case-cover {
   width: 100%;
@@ -291,18 +292,22 @@ main {
 }
 .case-details {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(1.5rem, 4vw, 4rem);
   padding-block: 2rem;
   border-bottom: 1px solid var(--line);
 }
 .case-details dt {
   color: var(--muted);
-  font-size: .75rem;
-  margin-bottom: .35rem;
+  font-family: "CarteroRegular", monospace;
+  font-size: .8rem;
+  margin-bottom: .65rem;
 }
 .case-details dd {
   margin: 0;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
 }
 .case-copy {
   max-width: 760px;
