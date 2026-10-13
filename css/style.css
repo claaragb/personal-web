@@ -278,7 +278,7 @@ main {
   border-bottom: 1px solid var(--line);
 }
 .case-hero {
-  padding-block: clamp(3rem, 6vw, 6rem) 1rem;
+  padding-block: clamp(3rem, 6vw, 6rem) 2.5rem;
 }
 .case-hero .eyebrow {
   margin-bottom: 1.5rem;
@@ -288,7 +288,7 @@ main {
   width: 100%;
   margin-bottom: 0;
   text-align: left;
-  font-size: clamp(2.6rem, 5.2vw, 5.2rem);
+  font-size: clamp(2.2rem, 4vw, 4rem);
 }
 .case-cover {
   width: 100%;
@@ -323,13 +323,24 @@ main {
   font-size: clamp(1.7rem, 3vw, 2.8rem);
   letter-spacing: -.025em;
 }
-.case-gallery {
+.case-gallery-stack {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 3rem);
+  width: 100%;
+}
+.case-gallery-large {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
+  gap: clamp(1.5rem, 3vw, 3rem);
+  width: 100%;
+}
+.case-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(1rem, 2vw, 2rem);
   width: 100%;
 }
-.case-gallery img {
+.case-gallery-stack img {
   width: 100%;
   max-height: none;
   object-fit: cover;
