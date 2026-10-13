@@ -54,7 +54,6 @@ h1, h2, h3 {
 }
 h1 {
   font-size: clamp(3rem, 7.8vw, 7.4rem);
-  letter-spacing: 0em;
 }
 h2 {
   font-size: clamp(2.2rem, 5vw, 5rem);
@@ -279,7 +278,7 @@ main {
   border-bottom: 1px solid var(--line);
 }
 .case-hero {
-  padding-block: clamp(3rem, 6vw, 6rem) 2.5rem;
+  padding-block: clamp(3rem, 7vw, 7rem) 5.5rem;
 }
 .case-hero .eyebrow {
   margin-bottom: 1.5rem;
@@ -289,7 +288,7 @@ main {
   width: 100%;
   margin-bottom: 0;
   text-align: left;
-  font-size: clamp(2.2rem, 4vw, 4rem);
+  font-size: clamp(2.2rem, 3vw, 3.5rem);
 }
 .case-cover {
   display: block;
@@ -301,11 +300,10 @@ main {
 }
 .case-details {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   align-items: start;
-  gap: clamp(1.5rem, 4vw, 4rem);
-  padding-block: 2rem;
-  border-bottom: 1px solid var(--line);
+  gap: clamp(1.5rem, 1vw, 4rem);
+  padding-block: 2rem 1rem;
 }
 .case-details dt {
   color: var(--muted);
@@ -320,7 +318,7 @@ main {
 }
 .case-copy {
   max-width: 760px;
-  padding-block: clamp(2.5rem, 5vw, 5rem);
+  padding-block: clamp(1.5rem, 2vw, 2rem);
 }
 .case-copy h2,
 .case-copy h3 {
@@ -444,6 +442,7 @@ main {
   justify-content: space-between;
   gap: 1rem;
   padding: 1.5rem var(--gutter);
+  padding-top: 5rem;
   border-top: 0;
   color: var(--muted);
   font-size: .75rem;
