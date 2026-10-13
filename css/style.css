@@ -145,10 +145,7 @@ main {
   max-width: 11ch;
   margin-bottom: 1.5rem;
 }
-.hero-copy {
-  max-width: 43rem;
-  font-size: clamp(1.05rem, 1.8vw, 1.5rem);
-}
+.hero-copy,
 .hero-bottom {
   display: flex;
   align-items: end;
