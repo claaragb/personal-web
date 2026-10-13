@@ -23,7 +23,13 @@ body {
   font-family: "WorkSans-Regular", "Work Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.4;
+  text-align: left;
   -webkit-font-smoothing: antialiased;
+}
+p, dd, li {
+  text-align: left;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 img, svg, video {
   display: block;
