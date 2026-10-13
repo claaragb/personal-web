@@ -26,11 +26,15 @@ body {
   text-align: left;
   -webkit-font-smoothing: antialiased;
 }
-p, dd, li {
+p {
   text-align: justify;
   text-align-last: left;
   text-justify: inter-word;
-  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+dd, li {
+  text-align: left;
   overflow-wrap: break-word;
 }
 img, svg, video {
