@@ -97,7 +97,10 @@
     gap: .45rem;
   }
   .page-intro {
-    padding-block: 4rem 3rem;
+    padding-block: 4.5rem 3rem;
+  }
+  .case-hero {
+    padding-block: 4.5rem 3rem;
   }
   .page-intro h1 {
     font-size: clamp(3rem, 14vw, 5rem);
