@@ -142,7 +142,7 @@ main {
   text-transform: uppercase;
 }
 .hero h1 {
-  max-width: 12ch;
+  max-width: 11ch;
   margin-bottom: 1.5rem;
 }
 .hero-copy {
