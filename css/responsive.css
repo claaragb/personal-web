@@ -87,7 +87,11 @@
   }
   .case-details {
     grid-template-columns: 1fr;
-    gap: 1rem;
+    gap: 1.25rem;
+    padding-block: 1.5rem;
+  }
+  .case-details dt {
+    margin-bottom: .35rem;
   }
   .case-gallery {
     grid-template-columns: 1fr;
