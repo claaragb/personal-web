@@ -10,6 +10,27 @@
     <link rel="stylesheet" href="../css/tipos.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
+    <style>
+      .synced-gif-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(1rem, 3vw, 2rem);
+        width: min(100%, 900px);
+        margin: 0 auto;
+      }
+      .synced-gif-gallery img {
+        display: block;
+        width: 100%;
+        height: auto;
+        min-width: 0;
+      }
+      @media (max-width: 600px) {
+        .synced-gif-gallery {
+          grid-template-columns: 1fr;
+          width: min(100%, 420px);
+        }
+      }
+    </style>
   </head>
   <body>
     <header class="site-header">
@@ -83,9 +104,9 @@
         </div>
       </section>
       <div class="case-gallery-stack">
-        <div class="case-gallery-large">
-          <img src="../img/anverso.gif" alt="">
-          <img src="../img/reverso.gif" alt="">
+        <div class="synced-gif-gallery" data-synced-gifs>
+          <img data-gif-src="../img/anverso.gif" alt="Anverso del diseño animado">
+          <img data-gif-src="../img/reverso.gif" alt="Reverso del diseño animado">
         </div>
       </div>
       <section class="case-copy">
@@ -135,6 +156,29 @@
           button.addEventListener('click', () => setLanguage(button.dataset.lang));
         });
         setLanguage('es');
+      })();
+
+      // Descarga ambos GIF antes de asignarlos en el mismo ciclo para sincronizar el inicio.
+      (async function syncGifs() {
+        const images = Array.from(document.querySelectorAll('[data-synced-gifs] img[data-gif-src]'));
+        if (images.length < 2) return;
+
+        try {
+          const blobs = await Promise.all(images.map(async (img) => {
+            const response = await fetch(img.dataset.gifSrc, { cache: 'force-cache' });
+            if (!response.ok) throw new Error('No se pudo cargar un GIF');
+            return response.blob();
+          }));
+          const urls = blobs.map((blob) => URL.createObjectURL(blob));
+          images.forEach((img, index) => {
+            img.src = urls[index];
+          });
+        } catch (error) {
+          // Si fetch no está disponible, conserva la carga normal de los GIF.
+          images.forEach((img) => {
+            img.src = img.dataset.gifSrc;
+          });
+        }
       })();
     </script>
   </body>
