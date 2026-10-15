@@ -1,7 +1,7 @@
 /* Responsive layout: móvil, tableta y escritorio */
 @media (max-width: 900px) {
   :root {
-    --gutter: clamp(1.1rem, 4vw, 2.25rem);
+    --gutter: clamp(1.5rem, 5vw, 2.75rem);
     --space: clamp(3.5rem, 10vw, 6rem);
   }
   .header-inner {
@@ -26,7 +26,7 @@
 }
 @media (max-width: 680px) {
   :root {
-    --gutter: 1.1rem;
+    --gutter: 1.35rem;
     --space: 4rem;
   }
   html {
