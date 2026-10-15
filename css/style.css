@@ -9,12 +9,6 @@
   --space: clamp(3rem, 8vw, 8rem);
 }
 
-/* Más espacio lateral en escritorio; los márgenes móviles se mantienen. */
-@media (min-width: 1024px) {
-  :root {
-    --gutter: clamp(4rem, 5vw, 6rem);
-  }
-}
 * {
   box-sizing: border-box;
 }
