@@ -364,7 +364,8 @@ main {
   gap: clamp(1rem, 2vw, 2rem);
   width: 100%;
 }
-.case-gallery-stack img {
+.case-gallery-stack img,
+.case-gallery-stack video {
   display: block;
   width: 100%;
   height: auto;
