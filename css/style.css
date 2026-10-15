@@ -332,7 +332,7 @@ main {
   text-wrap: pretty;
 }
 .case-copy {
-  max-width: 760px;
+  max-width: 450px;
   padding-block: clamp(1.5rem, 2vw, 2rem);
 }
 
@@ -484,9 +484,9 @@ main {
   }
 }
 
-/* Galería animada del proyecto «El precio de pertenecer» */
+/* Galería animada*/
 main.container .case-gallery-stack .synced-gif-gallery {
-  --gallery-inset: clamp(2.5rem, 7vw, 6rem);
+  --gallery-inset: clamp(4.5rem, 7vw, 6rem);
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch;
@@ -497,6 +497,7 @@ main.container .case-gallery-stack .synced-gif-gallery {
   box-sizing: border-box;
   padding-inline: var(--gallery-inset);
   margin: 0 auto;
+  margin-bottom: 2.5rem;
 }
 .result-block {
   border-top: 0;
