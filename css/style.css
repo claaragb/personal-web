@@ -373,6 +373,12 @@ main {
   object-fit: contain;
   background: transparent;
 }
+.case-gallery-stack video {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+  vertical-align: top;
+}
 .cv-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
