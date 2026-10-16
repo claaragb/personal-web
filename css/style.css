@@ -578,3 +578,19 @@ main.container .case-gallery-stack .synced-gif-gallery > .hover-gif {
     margin-top: 3rem;
   }
 }
+
+
+/* Página Contacto: eliminar líneas divisorias y bordes. */
+.contact-page .section,
+.contact-page .contact-layout,
+.contact-page .contact-form,
+.contact-page .form-field,
+.contact-page .contact-links {
+  border: 0;
+}
+.contact-page .form-field input,
+.contact-page .form-field textarea {
+  border: 0;
+  border-bottom: 1px solid transparent;
+  outline-offset: 3px;
+}
