@@ -636,3 +636,36 @@ main.container .case-gallery-stack .synced-gif-gallery > .hover-gif {
 .contact-page .form-field textarea {
   padding-inline: 0;
 }
+
+
+/* Recuperar el margen de sección sin reintroducir líneas divisorias. */
+.about-page .about-layout,
+.contact-page .contact-layout {
+  padding-block: clamp(3rem, 6vw, 5rem);
+}
+.about-page .content-block {
+  margin-top: 1.75rem;
+}
+.about-page .cv-section + .cv-section {
+  margin-top: 2rem;
+}
+.about-page .cv-entry + .cv-entry {
+  margin-top: 1rem;
+}
+.contact-page .contact-links {
+  margin-top: 2rem;
+}
+
+/* Recuperar el estilo original de los campos del formulario. */
+.contact-page .form-field input,
+.contact-page .form-field textarea {
+  padding: .85rem 1rem;
+  border: 1px solid #bcbab4;
+  border-radius: 0;
+  background: transparent;
+}
+.contact-page .form-field input:focus,
+.contact-page .form-field textarea:focus {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
