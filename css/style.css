@@ -594,3 +594,45 @@ main.container .case-gallery-stack .synced-gif-gallery > .hover-gif {
   border-bottom: 1px solid transparent;
   outline-offset: 3px;
 }
+
+
+/* Sobre mí y Contacto: eliminar también el espacio que dejaban los bordes. */
+.about-page .about-layout,
+.contact-page .contact-layout {
+  border: 0;
+  padding-block: 0;
+}
+.about-page .content-block,
+.about-page .cv-section,
+.about-page .cv-entry {
+  padding-block: 0;
+  margin-block: 0;
+}
+.about-page .content-block {
+  margin-top: 1.25rem;
+}
+.about-page .detail-list li {
+  padding-block: .35rem;
+}
+.about-page .cv-section + .cv-section {
+  margin-top: 1.5rem;
+}
+.about-page .cv-entry + .cv-entry {
+  margin-top: .8rem;
+}
+.about-page .about-main-content > .cv-section:first-of-type {
+  margin-top: 1.5rem;
+}
+.contact-page .contact-layout > div > h2 {
+  margin-top: 0;
+}
+.contact-page .contact-links {
+  margin-top: 1.25rem;
+}
+.contact-page .contact-form {
+  gap: .9rem;
+}
+.contact-page .form-field input,
+.contact-page .form-field textarea {
+  padding-inline: 0;
+}
