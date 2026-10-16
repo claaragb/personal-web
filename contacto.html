@@ -49,7 +49,10 @@
           <h2>
             <span data-es>Escríbeme</span><span data-en hidden>Send a message</span>
           </h2>
-          <form class="contact-form" id="contact-form">
+          <form class="contact-form" id="contact-form" action="https://formsubmit.co/gonzalezblancoclara3a@gmail.com" method="POST">
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde tu portfolio">
+            <input type="hidden" name="_template" value="table">
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" class="contact-honeypot">
             <div class="form-field">
               <label for="name">
                 <span data-es>Nombre</span><span data-en hidden>Name</span>
@@ -60,20 +63,20 @@
               <label for="email">
                 Email
               </label>
-              <input id="email" name="email" type="email" autocomplete="email" required>
+              <input id="email" name="email" type="email" autocomplete="email" placeholder="tu@email.com" required>
             </div>
             <div class="form-field">
               <label for="message">
                 <span data-es>Mensaje</span><span data-en hidden>Message</span>
               </label>
-              <textarea id="message" name="message" required>
+              <textarea id="message" name="message" rows="6" minlength="10" maxlength="5000" required placeholder="Cuéntame brevemente en qué consiste tu proyecto.">
               </textarea>
             </div>
             <button class="button" type="submit">
               <span data-es>Enviar mensaje</span><span data-en hidden>Send message</span> ↗
             </button>
             <p class="form-status" id="form-status" role="status">
-              <span data-es>Formulario de muestra: abrirá tu aplicación de correo, no almacena datos.</span><span data-en hidden>Demo form: it opens your email app and does not store data.</span>
+              <span data-es>El formulario enviará el mensaje por correo. La primera vez, FormSubmit puede pedirte confirmar la dirección desde un email de activación.</span><span data-en hidden>The form will send your message by email. The first time, FormSubmit may ask you to confirm the address through an activation email.</span>
             </p>
           </form>
         </div>
@@ -107,18 +110,6 @@
     });
     setLanguage('es');
 
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      const data = new FormData(this);
-      const subject = encodeURIComponent('Contacto desde el portfolio');
-      const body = encodeURIComponent(
-        'Nombre: ' + data.get('name') +
-        '\nEmail: ' + data.get('email') +
-        '\n\n' + data.get('message')
-      );
-      window.location.href =
-        'mailto:gonzalezblancoclara3a@gmail.com?subject=' + subject + '&body=' + body;
-    });
   })();
 </script>
   </body>
