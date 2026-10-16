@@ -526,3 +526,55 @@ main.container .case-gallery-stack .synced-gif-gallery > .hover-gif {
 .about-page .button {
   border: 0;
 }
+
+
+/* Página Sobre mí: perfil en columna izquierda y contenido alineado a la derecha. */
+.about-page .about-layout {
+  grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr);
+  align-items: start;
+}
+.about-page .about-profile-caption {
+  margin-top: 1.2rem;
+}
+.about-page .about-profile-caption h3 {
+  margin-bottom: .35rem;
+  font-size: clamp(1rem, 1.3vw, 1.25rem);
+  letter-spacing: 0;
+}
+.about-page .about-profile-caption p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: .9rem;
+}
+.about-page .about-cv-download {
+  margin-top: 2rem;
+}
+.about-page .about-cv-download h3 {
+  margin-bottom: .8rem;
+  font-size: 1rem;
+  letter-spacing: 0;
+}
+.about-page .about-main-content > .cv-section:first-of-type {
+  margin-top: var(--space);
+}
+.about-page .about-main-content .cv-section {
+  padding-block: 1.5rem;
+}
+@media (max-width: 680px) {
+  .about-page .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .about-page .about-profile {
+    max-width: 100%;
+  }
+  .about-page .about-profile-caption h3 {
+    font-size: 1.1rem;
+  }
+  .about-page .about-cv-download {
+    margin-top: 1.5rem;
+  }
+  .about-page .about-main-content > .cv-section:first-of-type {
+    margin-top: 3rem;
+  }
+}
