@@ -513,3 +513,16 @@ main.container .case-gallery-stack .synced-gif-gallery > .hover-gif {
   align-self: stretch;
   box-shadow: 0 8px 24px rgba(36, 36, 36, 0.14);
 }
+
+
+/* Página Sobre mí: eliminar líneas divisorias y bordes de cajas. */
+.about-page .section,
+.about-page .content-block,
+.about-page .detail-list li,
+.about-page .cv-section,
+.about-page .cv-entry {
+  border: 0;
+}
+.about-page .button {
+  border: 0;
+}
